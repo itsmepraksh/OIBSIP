@@ -1,9 +1,9 @@
  
 
-const Button = ({text}) => {
+const Button = ({text,className,icon}) => {
   return (
     <>
-      <div className="cta-btn w-fit p-2 text-white rounded bg-[#104026]">{text}</div>
+      <div className={`cta-btn w-fit py-2 px-4 text-white text-xs font-medium rounded bg-[#104026] active:scale-[0.9] ${className}`}>{text}{icon}</div>
     </>
   )
 }
