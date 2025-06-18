@@ -10,7 +10,7 @@ const SectionOne = () => {
   return (
     <>
       <section className="secOne px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[9rem] 2xl:px-[12rem] py-7 md:py-4">
-        <div className="  w-15 -right-[80%] -top-10    relative">
+        <div className="  w-15 -right-[80%] -top-10 xl:-right-[75%] xl:-top-5    relative">
           <FontAwesomeIcon
             className="text-[#104026] absolute -left-2 -bottom-4 rotate-180"
             icon={faLocationArrow}
@@ -26,31 +26,31 @@ const SectionOne = () => {
           <small className="bg-white p-1 px-4 font-medium text-gray-500 text-xs rounded-lg">
             Empowering Tomorrow's Al Innovators
           </small>
-          <h1 className="text-2xl md:text-3xl  md:w-[80%] font-bold text-[#133C2A] text-center py-5 md:py-7">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl  md:w-[80%] lg:w-[65%] xl:w-[55%]     font-bold text-[#133C2A] text-center py-5 md:py-7">
             Empowering Al Innovators to Build and Collaborate
           </h1>
-          <p className="text-xs text-gray-500 font-medium text-center pb-5 md:pb-10  md:w-[75%] ">
+          <p className="text-xs text-gray-500 font-medium text-center pb-5 md:pb-10  md:w-[75%] lg:w-[55%] xl:w-[40%] ">
             Join a thriving community of innovators, entrepreneurs, and experts
             to collaborate, learn, and grow. Unlock the full potential of Al
             with exclusive resources and support.
           </p>
-          <div className="flex justify-between bg-white  w-full md:w-[60%]">
+          <div className="flex justify-between bg-white  w-full md:w-[60%] xl:w-[45%] lg:p-2 ">
             <input
               type="text"
               placeholder="Enter your email"
-              className="px-4 w-[45%] placeholder:text-xs  text-xs"
+              className="px-4 w-[45%] placeholder:text-xs xl:placeholder:text-sm  text-xs xl:text-sm"
             />
             <div>
               <Button
                 text="Join the Community"
-                className="w-[55%]  "
-                icon={<FontAwesomeIcon icon={faArrowRight} className="px-1" />}
+                className="w-[55%]   xl:py-3 xl:px-4  "
+                icon={<FontAwesomeIcon icon={faArrowRight} className="px-1 " />}
               />
             </div>
           </div>
         </div>
 
-        <div className="  w-15 -bottom-10  relative">
+        <div className="  w-15 -bottom-10 xl:left-30 xl:-bottom-5  relative">
           <FontAwesomeIcon
             className="text-[#104026] absolute right-2 -top-2"
             icon={faLocationArrow}
@@ -62,7 +62,7 @@ const SectionOne = () => {
           />
         </div>
         
-        <div className="  w-15 -right-[80%] -bottom-10  relative">
+        <div className="  w-15 -right-[80%] -bottom-10 xl:-right-[70%] relative">
           <FontAwesomeIcon
             className="text-[#104026] absolute -left-2 -top-4 rotate-280"
             icon={faLocationArrow}
