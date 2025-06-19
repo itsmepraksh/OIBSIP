@@ -33,7 +33,7 @@ const SectionTwo = () => {
             </div>
           </div>
           <div className="funding-info md:w-1/2 ">
-            <h1  className="text-2xl text-left md:text-3xl lg:text-4xl  md:w-[80%] lg:w-[75%] xl:w-[65%]     font-bold text-[#133C2A] text-center py-5 md:py-7">Raise Funding for Your Startup</h1>
+            <h1  className="text-xl text-left md:text-2xl lg:text-3xl  md:w-[80%] lg:w-[75%] xl:w-[65%]     font-bold text-[#133C2A] text-center py-5 md:py-7">Raise Funding for Your Startup</h1>
             <p className="text-xs text-gray-500 text-left font-medium text-center pb-5 md:pb-10  md:w-[75%] lg:w-[70%] xl:w-[60%]  ">
               Launch a funding round through our online platform, allowing
               individuals to invest smaller amounts. Tap into your friends and

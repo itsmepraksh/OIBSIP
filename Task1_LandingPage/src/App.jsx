@@ -18,7 +18,7 @@ const App = () => {
         <BrandBar/>
 
         <SectionTwo/>
-        {/* <SectionThree/> */}
+        <SectionThree/>
         {/* <SectionFour/> */}
         {/* <Footer/> */}
     </main>
