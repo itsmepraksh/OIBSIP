@@ -6,6 +6,7 @@ import SectionThree from './layouts/SectionThree'
 import SectionFour from './layouts/SectionFour'
 import Footer from './components/Footer'
 import BrandBar from './components/BrandBar'
+import SectionFive from './layouts/SectionFive'
 
 const App = () => {
   return (
@@ -19,8 +20,9 @@ const App = () => {
 
         <SectionTwo/>
         <SectionThree/>
-        {/* <SectionFour/> */}
-        {/* <Footer/> */}
+        <SectionFour/>
+        <SectionFive/>
+        <Footer/>
     </main>
 
     </>
