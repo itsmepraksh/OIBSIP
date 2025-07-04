@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="appBox">
+        <h1>Temperature converter</h1>
+        <input id="user-input" type="number" placeholder="enter temperature in digits">
+        <select id="temperature-input">
+            <option value="0" disabled selected>--select--</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">kelvin</option>
+        </select>
+
+        <button id="submit-btn">convert</button>
+
+
+        <div id="display-value">
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const userInput = document.querySelector('#user-input')
+        const optionValue = document.querySelector('#temperature-input')
+        const submitBtn = document.querySelector('#submit-btn')
+        const displayValue = document.querySelector('#display-value')
+
+
+
+
+        submitBtn.addEventListener('click', () => {
+
+            if (userInput.value.length > 0 && optionValue.value != 0) {
+
+                let convert = "", value = parseFloat(userInput.value);
+                if (optionValue.value == 'fahrenheit') {
+
+
+                    let celsius = ((value - 32) * 5 / 9);
+                    let kelvin = ((value - 32) * 5 / 9) + 273.15;
+
+                    let data = ` 
+                        <p>celsius : ${celsius.toFixed(3)}  </p>
+                        <p>kelvin : ${kelvin.toFixed(3)} </p>
+                    `;
+                    displayValue.innerHTML = data;
+                    displayValue.classList.add('output')
+
+                }
+
+                if (optionValue.value == 'celsius') {
+
+                    let fahrenheit = (value * 1.8) + 32;
+                    let kelvin = value + 273.15;
+
+                    let data = ` 
+                        <p>fahrenheit : ${fahrenheit.toFixed(3)} </p>
+                        <p>kelvin : ${kelvin.toFixed(3)}  </p>
+                    `;
+                    displayValue.innerHTML = data;
+                    displayValue.classList.add('output')
+                }
+                if (optionValue.value == 'kelvin') {
+
+                    let celsius = value - 273.15;
+                    let fahrenheit = (value - 273.15) * 1.8 + 32;
+                    let data = ` 
+                        <p>celsius : ${celsius.toFixed(3)}  </p>
+                        <p>fahrenheit : ${fahrenheit.toFixed(3)} </p>
+                    `;
+                    displayValue.innerHTML = data;
+                    displayValue.classList.add('output')
+                }
+
+            }
+            else {
+                console.error('invalid values!')
+                displayValue.innerHTML = 'Invalid !'
+                displayValue.classList.add('errors')
+
+                setTimeout(()=>{
+                    displayValue.innerHTML = '';
+                    displayValue.classList.remove("errors");
+                },2000)
+            }
+
+        })
+
+
+    </script>
+</body>
+
+</html>

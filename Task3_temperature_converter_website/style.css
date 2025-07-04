@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    position: relative;
+    font-family: sans-serif;
+}
+.appBox{
+    padding-top: 5rem ;
+    display: flex;
+    width: 50%; 
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center; 
+    align-content: center;
+    gap: 1rem;
+}
+.appBox h1{
+    font-weight: 800;
+    text-align: center;
+    line-height: 1;
+    padding: 1rem 0;
+    color: rgb(38, 112, 232);
+}
+
+.appBox #user-input,#temperature-input,#submit-btn{
+    padding: 1rem  ; 
+    border-radius: 5px; 
+}
+
+
+
+#submit-btn:active{
+
+    outline-style:inset;
+    outline-width: 2px;
+    outline-color: #297add;
+    /* color: white; */
+    scale: 0.9;
+}
+
+
+
+
+#user-input::placeholder{
+    font-size: 0.75rem;
+}
+
+#display-value{
+    background-color: rgb(163, 163, 163);
+}
+
+.output{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem ;
+    line-height: 1.25;
+}
+
+
+.errors{
+    color: red;
+    font-size: 1rem; 
+    padding: 1rem;
+    font-weight: 600;
+    font-family: arial;
+    text-align: center;
+}
