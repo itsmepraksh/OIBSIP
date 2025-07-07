@@ -1,0 +1,457 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #1B1F22;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+nav{
+    font-weight: 700;
+    padding:0 1rem;
+    padding-top: 2rem; 
+    padding-bottom: 0.25rem;
+    position: sticky;
+    top: 0;
+    background-color: #1B1F22;
+    /* background-color: red; */
+    width: 100%; 
+    z-index: 99;
+}
+nav #menu{
+    display: flex;
+    justify-self: end;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+nav .hamburgMenu{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hireMe:hover{
+    background-color: white;
+    color: black;
+    transition:background-color 0.3s ease, all 0.3s ease;
+}
+
+#home-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    padding: 0 2rem ; 
+    margin: 1rem; 
+    
+}
+
+.heroImg{
+    width: 100%;
+    /* padding: 0.2rem; */
+    /* border: 1px solid white; */
+    box-shadow: 4px 3px 4px #0d0e10 ;
+}
+
+.heroImg img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.myself{ 
+    
+    padding-top:2rem ; 
+    font-family: Helvetica;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.5;
+    /* background-color: red; */
+}
+.designation{
+    width: 100%; 
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+    text-align: left;
+}
+
+.message{ 
+    font-weight: 500;
+    width: fit-content;
+    font-size: 1.2rem;
+    line-height: 1.3; 
+}
+
+#connect-here{ 
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start !important;
+    align-content: start; 
+    padding: 1.5rem 0; 
+    gap: 1rem;
+}
+
+.fa-github{
+    color: #4078C0;
+}
+.fa-square-instagram{
+    color: #FF3591;
+}
+.fa-linkedin{
+    color: #0072B1;
+}
+ 
+
+/*about page*/
+
+#about-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    padding: 0 2rem ; 
+    margin: 1rem;
+}
+#about-page .headline{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#about-page .bars{
+     width: 100%;
+}
+#about-page .smallBar{
+    background-color:#9775FA ;
+    padding: 0.75rem;
+    width: 40%;
+    margin-left: 0.5rem;
+}
+#about-page .longBar{
+    background-color: #313538;
+    padding: 0.75rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    width: 90%;
+}
+#about-page .headline h1{    
+    font-family: Helvetica;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    /* float: left; */
+}
+
+#about-page .info{
+    font-size: 0.9rem; 
+    padding-top:2rem ;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+#about-page .skills{  
+    padding-bottom: 4rem;
+}
+
+.skills h1{
+    padding-top:2rem ; 
+    font-family: Helvetica;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+#about-page .techStack{
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0; 
+    
+}
+
+.fa-js{
+    color: #FFFF00;
+}
+
+.fa-react{
+    color: #00BEFE;
+}
+
+.fa-node-js{
+    color: #ACFE2F;
+}
+.fa-css3{
+    color: #36ADDE;
+}
+
+.fa-sass{
+    color: #C31086;
+}
+
+.fa-html5{
+    color: #DD4B25;
+}
+
+/* work page*/
+
+#work-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    padding: 0 2rem ; 
+    margin: 1rem;
+}
+
+#work-page .headline{
+    width: 100%;
+    position: sticky;
+    top: 10%;
+    background-color:#1B1F22;
+}
+
+#work-page .smallBar{
+    background-color:#9775FA ;
+    padding: 0.75rem;
+    width: 40%;
+    margin-left: 0.5rem;
+}
+#work-page .longBar{
+    background-color: #313538;
+    padding: 0.75rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    width: 90%;
+}
+
+#work-page .headline h1{    
+    font-family: Helvetica;
+    font-weight: 800;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    /* float: left; */
+}
+
+/*animation*/
+ 
+
+.showcaseContainer{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#work-page .showcaseText{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around; 
+    font-weight: 100 ;
+    font-family: arial;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.showcaseText .fa-github{
+    color:white;
+    font-size: 1.3rem;
+
+}
+.showcase {
+    width: 100%;
+}
+.showcase img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover; 
+    border: 1px solid white;
+}
+
+@media (min-width:768px) {
+     
+
+    nav .hamburgMenu{
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    padding: 0 1rem;
+    gap: 1rem;
+    font-size: 0.9rem; 
+    }
+    .hireMe{
+        background-color: #9775FA;
+        padding: 0.5rem 1.25rem;
+        border-radius: 5px;
+        font-size: 0.75rem;
+    }
+    nav #menu{
+        display: none;
+    }
+    #home-page{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .heroImg{
+        width: 45%;
+        /* background-color: red; */
+    }
+    #intro{
+        width: 55%;
+    } 
+    .myself{
+        font-size: 3rem;
+    }
+    .designation{
+        letter-spacing: 1px;
+    } 
+
+    #connect-here{ 
+        font-size: 2rem;
+        gap: 2rem;
+    }
+
+    /*about page*/
+
+    #about-page{
+        padding-top: 0.5rem;
+    }
+
+    .headline{ 
+        flex-direction: row-reverse; 
+        align-self:flex-start;  
+        justify-content: left;
+        width: 70%;  
+    }
+    .headline h1{
+        font-size: 3rem; 
+    }
+    .bars{ 
+        width: 40%;  
+        padding: 1rem 0;
+        
+    }
+    .smallBar{
+        padding:  0.5rem;
+    }
+    .longBar{
+        width: 90%; 
+        padding: 0.5rem;
+    }   
+    .headline h1{
+        /* background-color: #ACFE2F; */
+        font-size: 3rem;
+    }
+    .skills{
+        width: 100%;  
+    }
+    .skills h1{
+        font-size: 2.25rem;
+    }
+    .info{
+        font-size: 1.3rem;
+    }
+    .techStack{
+        font-size: 2.5rem;
+    }
+
+    /*work page*/
+
+    #work-page .headline{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        /* position: fixed; */
+    }
+    #work-page .bars{
+        width: 25%;
+    }
+    #work-page .headline h1{
+        font-size: 4rem;
+    }
+    .showcaseContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showcase{
+        width: 65%;
+    }
+}
+
+@media (min-width:1024px) {
+    main{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    nav{
+        width: 97%;
+    }
+    #home-page{ 
+        padding-top: 5rem;
+        justify-content: space-around;
+    }
+    #hero-img{
+        width: 35%;
+    }
+    #intro{
+        width: 45%;
+        /* background-color: red; */
+    }
+}
+
+@media (min-width:1440px) {
+    main{
+        width: 80%; 
+    } 
+    #hero-img{
+        width: 25%;
+    }
+    #intro{
+        width: 40%;
+        /* background-color: red; */
+    }
+}
+
+@media (min-width:2560px) {
+     main{
+        width: 80%; 
+    } 
+    #hero-img{
+        width: 20%;
+    }
+    #intro{
+        width: 40%;
+    }
+}
